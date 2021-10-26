@@ -1,7 +1,10 @@
 #!/bin/bash
 
-# Prima di creare un nuovo progetto
-PROGETTO=$1
+source ./0-set-env.sh
+PROGETTO=$TEMP_HUGO_DIR$TEMP_HUGO_PROJECT
+
+#
+echo - PASSO 1 - Elimina directory progetto $PROGETTO se esiste
 
 if test -d "$PROGETTO"; then
 
@@ -14,5 +17,7 @@ if test -d "$PROGETTO"; then
     esac
     done
 else
-    echo "'$PROGETTO': non ESISTE"
+    echo "- Non eliminata perchè non esiste!"
 fi
+
+echo - next step       . 2-hugo-new-site.sh
