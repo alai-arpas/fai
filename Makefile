@@ -4,7 +4,7 @@ progetto=$(directory)$(nome_progetto)
 
 cancella-sh:=$(shell ./0-clean.sh $(progetto))
 
-git-init-sh:=$(shell ./2-git-init.sh $(progetto) $(nome_progetto))
+git-init-sh:=$(shell ./2-git-init.sh $(progetto))
 
 info:
 	# $(progetto)

@@ -3,7 +3,7 @@ dir_precedente=$(pwd)
 progetto=$1
 nome_progetto=$2
 cd $progetto
-echo 1 $progetto 2 $nome_progetto
+echo 1 $progetto
 
 git init .
 git add .
