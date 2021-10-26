@@ -12,7 +12,10 @@ if [ $TEMP_HUGO_VERIFICATO == "SI" ]; then
     echo "verificato"
 else
     echo
-    echo "Devi editare prima il file 'progetto.env'"
+    echo '*******************************************************************'
+    echo "TEMP_HUGO_VERIFICATO è in modalità sicurezza" 
+    echo "Devi editare prima il file 'progetto.env' e settare TEMP_HUGO_VERIFICATO=SI"
+    echo '*******************************************************************'
     return 1
 fi
 

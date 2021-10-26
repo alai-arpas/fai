@@ -8,7 +8,7 @@ echo - PASSO 4 - aggiunge thema
 if test -d "$PROGETTO"; then
     dir_precedente=$(pwd)
     cd $PROGETTO
-    git submodule add https://github.com/alai-arpas/eclectic-hugo-theme themes
+    git submodule add $TEMP_HUGO_SUB_THEMES themes
     git add .
     git commit -m "aggiunto themes"
     # git push --set-upstream origin master

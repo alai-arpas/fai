@@ -3,6 +3,7 @@
 source ./0-set-env.sh
 PROGETTO=$TEMP_HUGO_DIR$TEMP_HUGO_PROJECT
 # 
+echo
 echo - PASSO 5 - cambio directory
 
 if test -d "$PROGETTO"; then

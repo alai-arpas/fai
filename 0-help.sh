@@ -2,14 +2,14 @@
 
 source ./0-set-env.sh
 
-GIT_URL=https://github.com/alai-arpas/
+GIT_URL=$GITHUB
 echo
 echo - 0 edita il file 'progetto.env'
 
 echo - crea prima
-cat progetto.env | grep TEMP_HUGO_PROJECT
-echo $GIT_URL
+echo $GIT_URL; cat progetto.env | grep TEMP_HUGO_PROJECT; 
 echo
+cat progetto.env | grep TEMP_HUGO_VERIFICATO
 echo - 0-set-env.sh 'variabili temporanee (richiamato in ogni step)'
 echo - 1-clean.sh
 echo - 2-hugo-new-site.sh
