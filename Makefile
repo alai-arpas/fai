@@ -19,6 +19,7 @@ hugo-new:
 
 git-init:
 	# PASSO 2 - GIT INIT
+	echo x
 	@echo $(git-init-sh)
 	
 
