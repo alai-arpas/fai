@@ -1,4 +1,5 @@
-echo - PASSO 0 - Contenuto del file 'progetto.env'
+echo - PASSO 0 - Contenuto del file progetto.env
+
 cat progetto.env
 echo
 
