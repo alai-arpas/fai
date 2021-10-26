@@ -10,7 +10,7 @@ if test -d "$PROGETTO"; then
     echo "Attenzione la directory esiste già."
     echo - usa step '1-clean.sh' per cancellare
 else
-    hugo new site $PROGETTO
+    hugo new site $PROGETTO --format yaml
     echo 
     echo - step 3-git-init-sh
 fi
