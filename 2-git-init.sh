@@ -1,7 +1,7 @@
 # bash file per creazione
 dir_precedente=$(pwd)
 progetto=$1
-nome_progetto=$2
+#nome_progetto=$2
 cd $progetto
 echo 1 $progetto
 

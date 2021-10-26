@@ -2,9 +2,9 @@ directory=/home/alai/aprj/
 nome_progetto=alai-hugo-docs-prove
 progetto=$(directory)$(nome_progetto)
 
-cancella-sh:=$(shell ./0-clean.sh $(progetto))
+cancella-sh=$(shell ./0-clean.sh $(progetto))
 
-git-init-sh:=$(shell ./2-git-init.sh $(progetto))
+git-init-sh=$(shell ./2-git-init.sh $(progetto))
 
 info:
 	# $(progetto)
@@ -19,9 +19,7 @@ hugo-new:
 
 git-init:
 	# PASSO 2 - GIT INIT
-	echo x
 	@echo $(git-init-sh)
-	
 
 git-theme:
 	git submodule add https://github.com/alai-arpas/eclectic-hugo-theme themes
