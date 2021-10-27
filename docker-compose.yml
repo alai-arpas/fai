@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  hugo-andrea-app2:
+    # A hugo static web site
+    image: arpasali/hugo-alai-jobs:0.0.1
+    labels:
+      - "traefik.http.routers.app4.rule=Host(`app4.wdipgeo.arpas.adds`)"
+networks:
+  default:
+    external: true
+    name: traefik72_default
+      

@@ -1,12 +1,20 @@
-directory=/home/alai/aprj/
-nome_progetto=alai-hugo-docs-prove
-progetto=$(directory)$(nome_progetto)
+repo:
+	# GITHUB -> https://github.com/alai-arpas/hugo-alai-jobs
+up:
+	# AUTOMATICO
+	# PASSO 0 - push to github
+	git push
 
-cancella-sh=$(shell ./0-clean.sh $(progetto))
+	# PASSO 1 - compila le pagine
+	hugo
 
-info:
-	# $(progetto)
+	# PASSO 2 - crea nuova immagine docker
+	docker build . -t arpasali/hugo-alai-jobs:0.0.1
 
-0-start:
-	# PASSO 0 - rimuovi directroy precedente **DANGER**
-	@echo $(call cancella-sh)
+	# PASSO 3 - OLD Docker container down
+	docker-compose down
+
+	# PASSO 4 - NEW Docker container UP
+	docker-compose up -d
+
+	# PASSO 5 - http://app4.wdipgeo.arpas.adds/
