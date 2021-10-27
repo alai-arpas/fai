@@ -8,9 +8,9 @@ echo - PASSO 4 - aggiunge thema
 if test -d "$PROGETTO"; then
     dir_precedente=$(pwd)
     cd $PROGETTO
-    cd themes
-    git submodule add $TEMP_HUGO_SUB_THEMES
-    cd ..
+    #cd themes
+    git submodule add $TEMP_HUGO_SUB_THEMES $TEMP_HUGO_SUB_THEMES_NAME
+    #cd ..
     git add .
     git commit -m "aggiunto themes"
     git push
