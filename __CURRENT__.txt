@@ -1,0 +1,1 @@
+TEMP_HUGO_FAI_PROJECT=progetto_hugo-alai-idrometri.env

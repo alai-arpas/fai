@@ -1,11 +1,11 @@
 version: "3"
 
 services:
-  hugo-andrea-app2:
+  hugo-andrea-app5:
     # A hugo static web site
-    image: arpasali/hugo-alai-jobs:0.0.1
+    image: arpasali/hugo-alai-idrometri:0.0.1
     labels:
-      - "traefik.http.routers.app4.rule=Host(`app4.wdipgeo.arpas.adds`)"
+      - "traefik.http.routers.app5.rule=Host(`app5.wdipgeo.arpas.adds`)"
 networks:
   default:
     external: true
