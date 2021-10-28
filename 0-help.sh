@@ -10,7 +10,7 @@ echo - crea prima
 echo $GITHUB; cat $TEMP_HUGO_FAI_PROJECT | grep TEMP_HUGO_PROJECT;
 echo $GIT_URL
 echo
-cat progetto.env | grep TEMP_HUGO_VERIFICATO
+cat $TEMP_HUGO_FAI_PROJECT | grep TEMP_HUGO_VERIFICATO
 echo - 0-set-env.sh 'variabili temporanee (richiamato in ogni step)'
 echo - 1-clean.sh
 echo - 2-hugo-new-site.sh

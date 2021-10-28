@@ -7,10 +7,10 @@ echo
 echo - PASSO 6 - copia file utili
 
 if test -d "$PROGETTO"; then
-    cp Dockerfile $PROGETTO
-    cp docker-compose.yml $PROGETTO
-    cp Makefile $PROGETTO
-    cp favicon.ico $PROGETTO
+    # diversi per ogni  progetto
+    cp ./_prj_$TEMP_HUGO_PROJECT $PROGETTO
+    # uguali per tutti i progetti
+    cp ./_prj_UGUALI PER TUTTI/* $PROGETTO
 else
     echo "Devi ancora creare il progetto - step 2-hugo-new-site.sh"
 fi
