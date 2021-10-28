@@ -16,6 +16,8 @@ if test -d "$PROGETTO"; then
         * ) echo "Seleziona Y or N";;
     esac
     done
+    echo "*** DANGER ***** DELETE GITHUB PROJECT ****"
+    hub delete alai-arpas/$TEMP_HUGO_PROJECT
 else
     echo "- Non eliminata perchè non esiste!"
 fi

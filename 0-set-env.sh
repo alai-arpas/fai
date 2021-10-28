@@ -1,6 +1,6 @@
-echo - PASSO 0 - Contenuto del file progetto.env
-
 export $(cat __CURRENT__.txt | sed 's/#.*//g' | xargs)
+
+echo - PASSO 0 - Contenuto del file $TEMP_HUGO_FAI_PROJECT
 
 cat $TEMP_HUGO_FAI_PROJECT
 echo

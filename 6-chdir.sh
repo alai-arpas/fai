@@ -8,7 +8,7 @@ echo - PASSO 5 - cambio directory
 
 if test -d "$PROGETTO"; then
     cd $PROGETTO
-    git push --set-upstream origin master
+    #git push --set-upstream origin master
 else
     echo "Devi ancora creare il progetto - step 2-hugo-new-site.sh"
 fi

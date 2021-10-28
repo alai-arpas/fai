@@ -11,6 +11,7 @@ if test -d "$PROGETTO"; then
     #cd themes
     git submodule add $TEMP_HUGO_SUB_THEMES $TEMP_HUGO_SUB_THEMES_NAME
     #cd ..
+    echo theme: ananke >> config.yaml
     git add .
     git commit -m "aggiunto themes"
     git push

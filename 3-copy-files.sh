@@ -8,9 +8,9 @@ echo - PASSO 6 - copia file utili
 
 if test -d "$PROGETTO"; then
     # diversi per ogni  progetto
-    cp ./_prj_$TEMP_HUGO_PROJECT $PROGETTO
+    cp _prj_$TEMP_HUGO_PROJECT/* $PROGETTO
     # uguali per tutti i progetti
-    cp ./_prj_UGUALI PER TUTTI/* $PROGETTO
+    cp _prj_UGUALI_PER_TUTTI/* $PROGETTO
 else
     echo "Devi ancora creare il progetto - step 2-hugo-new-site.sh"
 fi
